@@ -12,6 +12,7 @@ def get_query_string():
         streams = streamlink.streams(url)
         keys = [k for k in streams.keys()]
         data = dict()
+        
         for k in keys:
             try:
                 data[k] = streams[k].url 
